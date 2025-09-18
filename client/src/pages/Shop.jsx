@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useCart } from "../cartContext";
 import "./Shop.css";
 
-const API = "http://localhost:5174/api";
+const API = import.meta.env.VITE_API_BASE || "http://localhost:5174/api";
 
 export default function Shop() {
   const { add } = useCart();
