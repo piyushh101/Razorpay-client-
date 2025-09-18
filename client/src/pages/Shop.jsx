@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useCart } from "../cartContext";
 import "./Shop.css";
-import { API } from "../api";
+
 
 const API = import.meta.env.VITE_API_BASE || "http://localhost:5174/api";
 
