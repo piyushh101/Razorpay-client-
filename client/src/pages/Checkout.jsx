@@ -3,7 +3,8 @@ import { useCart } from "../cartContext";
 import "./checkout.css"; // 👈 make sure this import is here
 
 
-const API = import.meta.env.VITE_API_BASE || "http://localhost:5174"; 
+const API = "https://razorpay-server-xghc.onrender.com/api"; // hardcoded for quick test
+
 
 export default function Checkout() {
   const { items, totalPaise } = useCart();
