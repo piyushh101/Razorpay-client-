@@ -4,7 +4,7 @@ import "./checkout.css"; // 👈 make sure this import is here
 
 
 const API = "https://razorpay-server-xghc.onrender.com/api"; // hardcoded for quick test
-
+const API = rawBase.replace(/\/$/, "") + "/api"; 
 
 export default function Checkout() {
   const { items, totalPaise } = useCart();
