@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useCart } from "../cartContext";
 import "./checkout.css"; // 👈 make sure this import is here
 
-const API = "http://localhost:5174/api";
+
+const API = import.meta.env.VITE_API_BASE || "http://localhost:5174"; 
 
 export default function Checkout() {
   const { items, totalPaise } = useCart();
